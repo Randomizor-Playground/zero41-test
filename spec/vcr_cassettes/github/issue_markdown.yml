@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.github.com/markdown
+    body:
+      encoding: UTF-8
+      string: '{"text":"**Test Issue** description"}'
+    headers:
+      Accept:
+      - application/vnd.github.raw
+      User-Agent:
+      - Octokit Ruby Gem 9.2.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_PERSONAL_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Feb 2025 21:20:47 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Commonmarker-Version:
+      - 0.23.10
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"c888bafd112846ba4d848d300b576b8ee19078c6d262635260d89ee0dcff18cf"
+      Github-Authentication-Token-Expiration:
+      - '2025-03-04 00:09:55 +0800'
+      X-Github-Media-Type:
+      - github.v3; param=raw
+      X-Accepted-Github-Permissions:
+      - allows_permissionless_access=true
+      X-Github-Api-Version-Selected:
+      - '2022-11-28'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4993'
+      X-Ratelimit-Reset:
+      - '1738448371'
+      X-Ratelimit-Used:
+      - '7'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - github.com
+      X-Github-Request-Id:
+      - C06F:30350A:65765B:8B7ED9:679E902F
+    body:
+      encoding: ASCII-8BIT
+      string: "<p><strong>Test Issue</strong> description</p>\n"
+  recorded_at: Sat, 01 Feb 2025 21:20:47 GMT
+recorded_with: VCR 6.3.1

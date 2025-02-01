@@ -1,0 +1,167 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 9.2.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_PERSONAL_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Feb 2025 21:20:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"372f2f9e25b23ad53ae002297612545fb709bb149aa3767ecd1939ee09824622"
+      Last-Modified:
+      - Sat, 01 Feb 2025 19:35:39 GMT
+      Github-Authentication-Token-Expiration:
+      - '2025-03-04 00:09:55 +0800'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Accepted-Github-Permissions:
+      - issues=read
+      X-Github-Api-Version-Selected:
+      - '2022-11-28'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4989'
+      X-Ratelimit-Reset:
+      - '1738448371'
+      X-Ratelimit-Used:
+      - '11'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - github.com
+      X-Github-Request-Id:
+      - C074:3012DD:1A4DF:25239:679E9031
+    body:
+      encoding: ASCII-8BIT
+      string: '{"url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1","repository_url":"https://api.github.com/repos/Randomizor-Playground/zero41-test","labels_url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1/comments","events_url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1/events","html_url":"https://github.com/Randomizor-Playground/zero41-test/issues/1","id":2825285340,"node_id":"I_kwDONy17is6oZm7c","number":1,"title":"Test
+        Open issue","user":{"login":"randomizor","id":1047142,"node_id":"MDQ6VXNlcjEwNDcxNDI=","avatar_url":"https://avatars.githubusercontent.com/u/1047142?v=4","gravatar_id":"","url":"https://api.github.com/users/randomizor","html_url":"https://github.com/randomizor","followers_url":"https://api.github.com/users/randomizor/followers","following_url":"https://api.github.com/users/randomizor/following{/other_user}","gists_url":"https://api.github.com/users/randomizor/gists{/gist_id}","starred_url":"https://api.github.com/users/randomizor/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/randomizor/subscriptions","organizations_url":"https://api.github.com/users/randomizor/orgs","repos_url":"https://api.github.com/users/randomizor/repos","events_url":"https://api.github.com/users/randomizor/events{/privacy}","received_events_url":"https://api.github.com/users/randomizor/received_events","type":"User","user_view_type":"public","site_admin":false},"labels":[],"state":"open","locked":false,"assignee":{"login":"randomizor","id":1047142,"node_id":"MDQ6VXNlcjEwNDcxNDI=","avatar_url":"https://avatars.githubusercontent.com/u/1047142?v=4","gravatar_id":"","url":"https://api.github.com/users/randomizor","html_url":"https://github.com/randomizor","followers_url":"https://api.github.com/users/randomizor/followers","following_url":"https://api.github.com/users/randomizor/following{/other_user}","gists_url":"https://api.github.com/users/randomizor/gists{/gist_id}","starred_url":"https://api.github.com/users/randomizor/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/randomizor/subscriptions","organizations_url":"https://api.github.com/users/randomizor/orgs","repos_url":"https://api.github.com/users/randomizor/repos","events_url":"https://api.github.com/users/randomizor/events{/privacy}","received_events_url":"https://api.github.com/users/randomizor/received_events","type":"User","user_view_type":"public","site_admin":false},"assignees":[{"login":"randomizor","id":1047142,"node_id":"MDQ6VXNlcjEwNDcxNDI=","avatar_url":"https://avatars.githubusercontent.com/u/1047142?v=4","gravatar_id":"","url":"https://api.github.com/users/randomizor","html_url":"https://github.com/randomizor","followers_url":"https://api.github.com/users/randomizor/followers","following_url":"https://api.github.com/users/randomizor/following{/other_user}","gists_url":"https://api.github.com/users/randomizor/gists{/gist_id}","starred_url":"https://api.github.com/users/randomizor/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/randomizor/subscriptions","organizations_url":"https://api.github.com/users/randomizor/orgs","repos_url":"https://api.github.com/users/randomizor/repos","events_url":"https://api.github.com/users/randomizor/events{/privacy}","received_events_url":"https://api.github.com/users/randomizor/received_events","type":"User","user_view_type":"public","site_admin":false}],"milestone":null,"comments":1,"created_at":"2025-02-01T15:59:21Z","updated_at":"2025-02-01T19:35:39Z","closed_at":null,"author_association":"MEMBER","sub_issues_summary":{"total":0,"completed":0,"percent_completed":0},"active_lock_reason":null,"body":"This
+        is a test open issue for coding task\n\n**Test** with some _formatting_ like
+        \n\n```ruby\ndef test\n  \"Testing!\"\nend\n```\n\n```json\n{\n  \"a\": \"b\"\n}\n```","closed_by":null,"reactions":{"url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"timeline_url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1/timeline","performed_via_github_app":null,"state_reason":null}'
+  recorded_at: Sat, 01 Feb 2025 21:20:49 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1/comments?per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 9.2.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_PERSONAL_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Feb 2025 21:20:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"e16b83424958ffc3a4427a716492cd38f2e3d9d1991b4914a9fb908ff512d730"
+      Github-Authentication-Token-Expiration:
+      - '2025-03-04 00:09:55 +0800'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Accepted-Github-Permissions:
+      - issues=read; pull_requests=read
+      X-Github-Api-Version-Selected:
+      - '2022-11-28'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4988'
+      X-Ratelimit-Reset:
+      - '1738448371'
+      X-Ratelimit-Used:
+      - '12'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - github.com
+      X-Github-Request-Id:
+      - C076:BACF3:6252C2:885E31:679E9032
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/comments/2629012029","html_url":"https://github.com/Randomizor-Playground/zero41-test/issues/1#issuecomment-2629012029","issue_url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/1","id":2629012029,"node_id":"IC_kwDONy17is6cs4o9","user":{"login":"randomizor","id":1047142,"node_id":"MDQ6VXNlcjEwNDcxNDI=","avatar_url":"https://avatars.githubusercontent.com/u/1047142?v=4","gravatar_id":"","url":"https://api.github.com/users/randomizor","html_url":"https://github.com/randomizor","followers_url":"https://api.github.com/users/randomizor/followers","following_url":"https://api.github.com/users/randomizor/following{/other_user}","gists_url":"https://api.github.com/users/randomizor/gists{/gist_id}","starred_url":"https://api.github.com/users/randomizor/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/randomizor/subscriptions","organizations_url":"https://api.github.com/users/randomizor/orgs","repos_url":"https://api.github.com/users/randomizor/repos","events_url":"https://api.github.com/users/randomizor/events{/privacy}","received_events_url":"https://api.github.com/users/randomizor/received_events","type":"User","user_view_type":"public","site_admin":false},"created_at":"2025-02-01T16:14:26Z","updated_at":"2025-02-01T16:14:26Z","author_association":"MEMBER","body":"Test
+        with comment","reactions":{"url":"https://api.github.com/repos/Randomizor-Playground/zero41-test/issues/comments/2629012029/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}]'
+  recorded_at: Sat, 01 Feb 2025 21:20:50 GMT
+recorded_with: VCR 6.3.1

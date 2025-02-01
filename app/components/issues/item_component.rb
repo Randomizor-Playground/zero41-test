@@ -30,6 +30,8 @@ module Issues
     end
 
     def time_ago
+      return if time_at.blank?
+
       time_ago_in_words(time_at)
     end
   end
