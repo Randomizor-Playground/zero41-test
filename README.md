@@ -1,24 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation
 
-Things you may want to cover:
+Required software needed to be installed. Instructions below are for mac users who have homebrew installed already.
 
-* Ruby version
+- Ruby 3.4.1
 
-* System dependencies
+#### RVM
 
-* Configuration
+```
+rvm install 3.4.1
+rvm use 3.4.1
+```
 
-* Database creation
+#### Bundler
 
-* Database initialization
+```
+gem install bundler
+bundle install
+```
 
-* How to run the test suite
+### Environmental Variables
 
-* Services (job queues, cache servers, search engines, etc.)
+Please create a `.env.local` file to set up environmental variables. Required variables can be found in `.env.example`
 
-* Deployment instructions
+### Running
 
-* ...
+#### Server
+
+`./bin/dev`
+
+### Usage
+
+#### General
+
+A list and show page is available for Github issues assigned to the user defined by the personal access token.
+
+Issues can be filtered by `open`, `closed` and `all`
+
+### Testing
+
+`bundle exec rspec`
