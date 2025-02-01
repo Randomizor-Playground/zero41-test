@@ -1,0 +1,6 @@
+<div class="inline-flex rounded-md shadow-xs mb-4">
+  <% @buttons.each_with_index do |button, index| %>
+    <%= link_to button[:label], button[:path],
+      class: "px-2 py-1 text-sm font-medium bg-white border border-gray-200 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 hover:bg-gray-100 #{active_class(button[:state])} #{rounded_class(index)}" %>
+  <% end %>
+</div>

@@ -1,0 +1,16 @@
+<div class="mx-auto bg-white shadow-md rounded-lg p-6 border border-gray-200">
+  <h1 class="text-4xl mb-4">Issues</h1>
+
+  <%= render ButtonGroupComponent.new(
+    buttons: [
+      { label: "Open", path: issues_path(state: "open"), state: "open" },
+      { label: "Closed", path: issues_path(state: "closed"), state: "closed" },
+      { label: "All", path: issues_path(state: "all"), state: "all" }
+    ],
+    active_state: @state
+  ) %>
+
+  <div>
+    <%= render(Issues::ItemComponent.with_collection(@issues)) %>
+  </div>
+</div>

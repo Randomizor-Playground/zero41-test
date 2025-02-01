@@ -1,0 +1,23 @@
+<div class="mb-4">
+  <%= link_to "Back to Issues", issues_path, class: "text-blue-600 hover:underline" %>
+</div>
+
+<h1 class="text-3xl font-semibold text-gray-900 flex items-center">
+  <%= title %>
+  <span class="ml-3 text-gray-500 text-lg">#<%= number %></span>
+</h1>
+
+<div class="mt-2 text-sm text-gray-500">
+  <span class="font-bold">Repository:</span> <%= repo_name %>
+</div>
+
+<div class="mt-4 flex items-center text-sm text-gray-600">
+  <img src="<%= avatar_url %>" alt="User avatar" class="w-8 h-8 rounded-full mr-3">
+  <span>
+    Opened by <span class="font-bold"><%= login %></span> <%= time_ago_in_words(created_at) %> ago
+  </span>
+</div>
+
+<div class="mt-4 leading-relaxed space-y-4" data-controller="code">
+  <%= html_body %>
+</div>

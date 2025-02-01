@@ -10,5 +10,13 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "issues#index"
+
+  scope '/issues' do
+    get '/', to: 'issues#index', as: 'issues'
+
+    scope '/:owner/:repo/:number', constraints: { number: /\d+/ } do
+      get '/', to: 'issues#show', as: 'issue'
+    end
+  end
 end
